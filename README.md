@@ -71,18 +71,12 @@ Connect the pads to the individual according the the chart and diagram below.
 | Red | Right Leg |
 
 ![Sensor Pad Placement](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/5/0/body.png)
-![SerialPlotter](https://cdn.sparkfun.com/assets/learn_tutorials/2/5/0/AD8232_Heart_Rate_Arduino_Serial_Plotter.jpg)
+
 
 
 ## Code 
 
 Use the code below to copy into the Arduino IDE or use the file in the respository. 
-
-Upload this code to your arduino and leave it connected to the computer as you now want to visualise the data
-
-The serial data is hard to visualize if you are just viewing the values. If you are using Arduino IDE v1.6.6+, there is an option to view the data on a graph using the Arduino Serial Plotter as one option. In the Arduino IDE, select Tools > Serial Plotter. You should see a waveform similar to the image below when the sensors are placed correctly and not moving.
-
-The RGB LED should also be lighting up to the coresponding colours in the code. 
 
 ```
 #include <RGBLED.h>
@@ -116,4 +110,9 @@ Serial.println(analogRead(A0));
 }
 ```
 
+Upload this code to your arduino and leave it connected to the computer as you now want to visualise the data
 
+The serial data is hard to visualize if you are just viewing the values. If you are using Arduino IDE v1.6.6+, there is an option to view the data on a graph using the Arduino Serial Plotter as one option. In the Arduino IDE, select Tools > Serial Plotter. You should see a waveform similar to the image below when the sensors are placed correctly and not moving.
+![SerialPlotter](https://cdn.sparkfun.com/assets/learn_tutorials/2/5/0/AD8232_Heart_Rate_Arduino_Serial_Plotter.jpg)
+
+The RGB LED should also be lighting up to the coresponding colours in the code. 
